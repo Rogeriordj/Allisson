@@ -68,35 +68,41 @@ object frmNotas: TfrmNotas
           item
             Expanded = False
             FieldName = 'ID_CONHECIMENTO'
+            Title.Caption = 'ID Conhecimento'
             Width = 92
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'DT_EMISSAO'
+            Title.Caption = 'Data Emiss'#227'o'
             Width = 84
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'DT_ALTERACAO'
+            Title.Caption = 'Data Altera'#231#227'o'
             Width = 95
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'CHAVE_ACESSO_NFE'
+            Title.Caption = 'Chave da NFE'
             Width = 272
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'VOLUMES'
+            Title.Caption = 'Volumes'
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'VLR_MERCADORIA'
+            Title.Caption = 'Valor Mercadoria'
             Visible = True
           end>
       end
@@ -141,41 +147,48 @@ object frmNotas: TfrmNotas
           item
             Expanded = False
             FieldName = 'NR_CTO'
-            Width = 52
+            Title.Caption = 'Nr'#186' Conhecimento'
+            Width = 113
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'SERIE'
+            Title.Caption = 'S'#233'rie'
             Width = 46
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'FILIAL'
+            Title.Caption = 'Filial'
             Width = 39
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'NM_DESTINATARIO'
+            Title.Caption = 'Destinat'#225'rio'
             Width = 272
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'NM_REMETENTE'
+            Title.Caption = 'Remetente'
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'OPERADOR'
+            Title.Caption = 'Operador'
             Width = 101
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'DT_ALTERACAO'
+            Title.Caption = 'Data Altera'#231#227'o'
             Visible = True
           end>
       end
@@ -270,6 +283,7 @@ object frmNotas: TfrmNotas
     Top = 105
   end
   object qryConhecimento: TFDQuery
+    IndexFieldNames = 'ID'
     MasterSource = dsNotas
     MasterFields = 'ID_CONHECIMENTO'
     Connection = dtmConexao.FDConnection1
@@ -278,7 +292,8 @@ object frmNotas: TfrmNotas
     UpdateOptions.AutoCommitUpdates = True
     UpdateObject = FDUpdateSQL1
     SQL.Strings = (
-      'SELECT * FROM CONHECIMENTO c ')
+      'SELECT * FROM CONHECIMENTO c '
+      'INNER JOIN "NOTA FISCAL" NF ON NF.ID_CONHECIMENTO=C.ID')
     Left = 528
     Top = 305
   end

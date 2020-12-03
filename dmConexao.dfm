@@ -5,12 +5,13 @@ object dtmConexao: TdtmConexao
   object FDConnection1: TFDConnection
     ConnectionName = 'FBConection'
     Params.Strings = (
-      'Database=BASE_TESTE.FDB'
+      'Database=C:\TesteTex\database\TESTETEX'
       'User_Name=SYSDBA'
       'Password=masterkey'
       'Server=127.0.0.1'
       'Port=3050'
       'DriverID=IB')
+    Connected = True
     Left = 32
     Top = 16
   end
