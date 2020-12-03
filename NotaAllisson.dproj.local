@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/12/02 15:33:07.000.049,=C:\Users\Casa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/02 15:35:31.000.005,C:\Allison\NotaAlisson.dfm=C:\Users\Casa\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/12/02 15:35:31.000.005,C:\Allison\NotaAlisson.pas=C:\Users\Casa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/02 15:35:41.000.277,C:\Allison\NotaAllisson.dproj=C:\Users\Casa\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/12/02 15:53:55.000.273,=C:\Allison\Unit1.pas</Transaction>
+    <Transaction>2020/12/02 15:55:31.000.664,C:\Allison\Unit1.dfm=C:\Allison\dmConexao.dfm</Transaction>
+    <Transaction>2020/12/02 15:55:31.000.664,C:\Allison\Unit1.pas=C:\Allison\dmConexao.pas</Transaction>
+    <Transaction>2020/12/02 21:49:27.717,=C:\Allison\uLkJSON.pas</Transaction>
+  </Transactions>
+</BorlandProject>
